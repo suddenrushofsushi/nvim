@@ -3,6 +3,7 @@
 filetype off
 let mapleader = " "
 execute pathogen#infect()
+set termguicolors
 
 " :q is now :close (:quit will still exit vim)
 cabbrev q <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'close' : 'q')<CR>
